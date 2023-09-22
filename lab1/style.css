@@ -16,7 +16,7 @@ nav img {
     margin-right: 100px
 }
 
-.top_nav {
+.text_nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,7 +25,7 @@ nav img {
 
 }
 
-.top_nav li {
+.text_nav li {
     margin: 0px;
     padding: 0px;
     color: #B8BECD;
