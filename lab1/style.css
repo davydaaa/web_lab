@@ -1,6 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+  @import url('animation.css');
+  @import url('media.css');
 
 
 nav {
@@ -12,9 +14,17 @@ nav {
     padding-top: 27px;
 }
 
-nav img {
-    margin-right: 100px
+.menu {
+    display: none;
+    width: 32px;
+    cursor: pointer;
 }
+
+.menu img {
+    max-width: 100%;
+}
+
+
 
 .text_nav {
     display: flex;
@@ -34,8 +44,20 @@ nav img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration: none;
     display: block;
+
+}
+
+
+.text_nav li:hover {
+    color: #202336;
+    font-weight: 500;
+}
+
+.register_button {
+    display: flex;
+    width: 275px;
+    justify-content: space-between;
 }
 
 #active {
@@ -72,67 +94,79 @@ header h3 {
 
 .guides {
     width: 481px;
-    height: 303px;
-    padding-top: 320px;
 }
 
 header {
     padding: 0 197px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 833px;
 }
 
 header img {
-    margin-left: 50px;
-    margin-top: 150px;    
-    width: 599px;
-    height: 542px;
+  
+    max-width: 60%;
+    max-height: 60%;
+
 }
 
-header button {
+header a {
     border-radius: 8px;
     background: #FB8F1D;
-    width: 164px;
-    height: 48px;
     border: transparent;
+    padding: 13px 40px;
+    text-decoration: none;
 
     color: #FFF;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;  
+    font-weight: 600;
+    
+    transition: 1s;
+}
+
+header a:hover {
+    padding: 16px 43px;
 }
 
 #register {
-    width: 132px;
-    height: 44px;
+    padding: 13px 40px;
     border-radius: 8px;
     background: #FB8F1D;
     border: transparent;
+    text-decoration: none;
+
 
     color: #FFF;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
-    font-weight: 500;  
+    font-weight: 500; 
+    
 }
 
 #login {
-    width: 132px;
-    height: 44px;
+    padding: 13px 45px;
     border-radius: 8px;
     border: 1px solid #FB8F1D;
     background-color: transparent;
+    text-decoration: none;
+
 
     color: #FB8F1D;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
+
 }
 
+
 .second_section {
-    padding: 0 197px;
+    padding-left: 10%;
+    padding-right: 8%;
     height: 774px;
     background: #F8F8F8;
     display: flex;
@@ -169,9 +203,17 @@ header button {
 
 #photographer {
     margin-top: 189px;
-    width: 384px;
-    height: 491px;
+    max-width: 70%;
+    max-height: 70%;
     border-radius: 14px;
+}
+
+.rating img {
+    transition: 1s;
+}
+
+.rating img:hover {
+    rotate: 360deg;
 }
 
 .second_section h3 {
@@ -195,7 +237,8 @@ header button {
 
 .third_section {
     padding: 0 197px;
-    height: 863px;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 .top_description {
@@ -226,6 +269,7 @@ header button {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -318,3 +362,4 @@ footer {
     text-decoration: none;
 
 }
+

@@ -1,0 +1,131 @@
+@media screen and (max-width: 1100px ) {
+
+    nav {
+        align-items: start;
+        justify-content: space-around;
+        padding: 10px 30px;
+    }
+
+    .register_button {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-left: 30px;
+        margin-top: 30px;
+
+    }
+    
+    
+    .text_nav {
+        display: none;
+        text-align: center;
+        flex-direction: column;
+        background-color: white;
+
+    }
+
+    .text_nav li, #active {
+        font-size: 40px;
+        height: 90px;
+    }
+
+
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        padding: 100px 0;
+    }
+
+    header h3 {
+        width: 100%;
+    }
+
+    .guides {
+        text-align: center;
+        width: 90%;
+    }
+    
+
+    .second_section {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .second_section p {
+        width: 100%;
+    }
+
+
+
+    .top_description {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .top_description h2 {
+        text-align: center;
+    }
+
+    .description {
+        align-items: center;
+        width: 90%;
+    }
+
+    .description h2 {
+        margin-bottom: 40px;
+    }
+
+    .description p {
+        text-align: center;
+    }
+
+    .third_section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .item {
+        padding: 20px 0px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: auto;
+    }
+
+    .rights {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .rights h4 {
+        text-align: center;
+    }
+}
+
