@@ -3,7 +3,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
   @import url('animation.css');
   @import url('media.css');
-
+body {
+    margin: 0;
+}
 
 nav {
     padding: 0 197px;
@@ -26,30 +28,39 @@ nav {
 
 
 
-.text_nav {
+#text_nav {
     display: flex;
     flex-direction: row;
+    text-decoration: none;
     justify-content: space-between;
     width: 347px;
     padding-left: 0px;
 
 }
 
-.text_nav li {
+#text_nav li {
     margin: 0px;
     padding: 0px;
     color: #B8BECD;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
+    text-decoration: none ;
     font-weight: 400;
     line-height: normal;
     display: block;
 
 }
 
+#text_nav li a {
+    text-decoration: none;
+    color: #B8BECD;
+    font-family: Inter;
+    font-size: 16px;
+}
 
-.text_nav li:hover {
+
+#text_nav li a:hover {
     color: #202336;
     font-weight: 500;
 }
@@ -60,7 +71,7 @@ nav {
     justify-content: space-between;
 }
 
-#active {
+#text_nav #active {
     
     color: #202336;
     font-family: Inter;

@@ -22,15 +22,29 @@
     }
     
     
-    .text_nav {
-        display: none;
+    #text_nav {
+        display: block;
         text-align: center;
         flex-direction: column;
         background-color: white;
 
     }
 
-    .text_nav li, #active {
+    #text_nav{
+        display: block;
+        position: fixed;
+        width: 100%;
+        margin-top: 0;
+        clip-path: circle(0 at top left);
+        transition: clip-path 0.3s ease-in;
+        max-width: 100%;
+    }
+
+    #text_nav.open{
+        clip-path: circle(1000px at top);
+    }
+
+    #text_nav li, #active {
         font-size: 40px;
         height: 90px;
     }
@@ -41,7 +55,7 @@
         flex-direction: column-reverse;
         align-items: center;
         height: auto;
-        padding: 100px 0;
+        padding: 10% 0;
     }
 
     header h3 {

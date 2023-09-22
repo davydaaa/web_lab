@@ -1,6 +1,6 @@
 const OPEN_CLASSNAME = "open";
 
-const textNav = document.getElementById("text_nav");
+const textNav = document.querySelector("#text_nav");
 
 function toggleMenu () {
     if (textNav.classList.contains(OPEN_CLASSNAME)) {
